@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-header">
+    <span class="name"><%= @reserve.name %></span>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><%= @reserve.start_time %></li>
+    <li class="list-group-item">
+      <%= link_to "destroy", reserf_path,
+          method: :delete,
+          data: { confirm: "本当に削除しますか?" },
+          class: "btn btn-danger"%>
+    </li>
+  </ul>
+</div>

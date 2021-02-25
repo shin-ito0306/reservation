@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require simple_calendar
+
+ */
+ // Custom bootstrap variables must be set or imported *before* bootstrap.
+ @import "bootstrap";
+
+
+/*------------------aplication.html.erb-------------------------*/
+
+h1 {
+  background: linear-gradient(transparent 70%, #a7d6ff 70%);
+  width: 25%;
+}
+
+/*------------------index.html.erb------------------------------*/
+
+.notice {
+  font-size: 30px;
+  color: green;
+}
+
+/*------------------new.html.erb--------------------------------*/
+
+
+.box6 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    background: #f0f7ff;
+    border: dashed 2px #5b8bd0;
+    width: 30%;
+}
+.box6 p {
+    margin: 0;
+    padding: 0;
+}
+
+.error {
+  color: tomato;
+}
+
+
+/*------------------show.html.erb-------------------------------*/
+
+.name {
+  font-size: 20px;
+}
+
+/*------------------look.html.erb-------------------------------*/
+
+.time {
+  font-size: 30px;
+
+}

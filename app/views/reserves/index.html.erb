@@ -1,0 +1,10 @@
+<p class="notice"><%= flash[:notice] %></p>
+<%= month_calendar events: @reserves do |date, reserves| %>
+  <% if date.wday == 0 || date.wday == 4 %>
+    <%= date.day %>
+    <p><%= "❌" %></p>
+  <% else %>
+    <%= link_to "#{date.day}", reserves_look_path(date: date) %>
+    <p><%= reserves.count %>人</p>
+  <% end %>
+<% end %>
