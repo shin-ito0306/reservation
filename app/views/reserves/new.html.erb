@@ -19,7 +19,7 @@
                             use_month_numbers: true,
                             date_separator: '/') %>
     <% if @reserve.errors.messages[:start_time].any? %>
-    <span class="eroor"><%= @reserve.errors.messages[:start_time][0] %></span>
+    <span class="error"><%= @reserve.errors.messages[:start_time][0] %></span>
     <% end %>
   </p>
 

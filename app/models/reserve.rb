@@ -8,11 +8,11 @@ class Reserve < ApplicationRecord
 
 
   def start_time_not_sunday
-    errors.add(:start_time, '※日曜日は休日です') if start_time.sunday?
+    errors.add(:start_time, '※日曜日は休診です') if start_time.sunday?
   end
 
   def start_time_not_thursday
-    errors.add(:start_time, '※木曜日は休日です') if start_time.thursday?
+    errors.add(:start_time, '※木曜日は休診です') if start_time.thursday?
   end
 
   def not_past_day
